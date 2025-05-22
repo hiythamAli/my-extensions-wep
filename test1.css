@@ -1,0 +1,377 @@
+
+
+.header {
+
+    margin: 30px;
+    background-color: #474767;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    height: 40px;
+  border-radius: 10px;
+}
+.body {
+  background: linear-gradient(to right, #e0f7fa, #ffffff); /* نهاري */
+  color: #000;
+  transition: 0.4s ease, color 0.4s ease;
+}
+.night-mode {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* ليلي */
+  color: #fff;
+}
+
+.toast {
+  visibility: hidden;
+  min-width: 100px;
+  background-color: #36363e;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 12px 20px;
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.5s, bottom 0.5s;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+}
+
+.container {
+  transition: opacity 0.4s ease;
+  opacity: 1;
+}
+
+.container.hide {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+
+
+.logo {
+    
+   padding: 5px;
+    width: 150;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.4s ease;
+}
+
+.moon{
+padding: 7px 7px;
+height: 25px;
+width: 25px;
+cursor: pointer;
+
+transition: all 0.4s ease;
+transform: rotate(0deg);
+}
+
+.moon.rotate {
+transform: rotate(180deg);
+}
+
+
+
+
+.extinsions-list{
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+  
+
+
+}
+.extinsions-list h2 {
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+   
+}
+
+
+
+
+.btn{
+  
+    font-family: "Roboto", sans-serif;
+    background-color: #392e6e;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 15px;
+    border: none;
+  height: 30px;
+
+margin: 4px;
+
+}
+.btn:hover{
+  opacity: 0.5;
+    background-color:brown;
+    font-size: 15px;
+    }
+
+
+    .btn1{
+  background-color: #392e6e;
+      font-family: "Roboto", sans-serif;
+      border-radius: 30px;
+      padding: 5px 15px;
+      border: none;
+    height: 30px;
+  color: aliceblue;
+  
+  }
+  .btn1:hover{
+    opacity: 0.5;
+      background-color:brown;
+      font-size: 15px;
+      }
+  
+      .btn2{
+        background-color: #392e6e;
+            font-family: "Roboto", sans-serif;
+            border-radius: 30px;
+            padding: 5px 15px;
+            border: none;
+          height: 30px;
+        color: aliceblue;
+        
+        }
+        .btn2:hover{
+          opacity: 0.5;
+            background-color:brown;
+            font-size: 15px;
+            }
+            .btn3{
+              background-color: #392e6e;
+                  font-family: "Roboto", sans-serif;
+                  border-radius: 30px;
+                  padding: 5px 15px;
+                  border: none;
+                height: 30px;
+              color: aliceblue;
+              
+              }
+              .btn3:hover{
+                opacity: 0.5;
+                  background-color:brown;
+                  font-size: 15px;
+                  }
+
+
+
+    
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+   
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+    border-radius: 40px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px;
+  }
+  
+  input:checked + .slider {
+    background-color:brown;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px brown;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .cards-info{
+
+background-color: #474767;
+width: 350px;
+
+border-top-right-radius: 20px;
+border-top-left-radius:20px ;
+  padding: 10px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+  }
+
+.card-name {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+align-items: center;
+justify-content: space-between;
+}
+
+.green{
+
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+}
+.info{
+margin: 10px;
+
+}
+ .card-buttons {
+ height: 50px;
+  background-color: #474767;
+  width: 350px;
+  padding: 10px;
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+
+ }
+ .tow{
+
+margin: 5px;
+display: flex;
+justify-content:space-between;
+align-items: center;
+ }
+
+.container{
+
+  
+
+  
+margin: 10px;
+
+
+}
+.cards{
+margin-left: 150px;
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+  
+
+width: 1250px;
+  justify-content: space-around;
+  display: flex;
+ align-items: start ;
+  
+
+}
+.cards1{
+  margin-left: 150px;
+  width: 1250px;
+
+   
+  
+  
+    justify-content: space-around;
+    display: flex;
+   align-items: start ;
+    
+}
+
+.cards2{
+  margin-left: 150px;
+  width: 1250px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+ 
+
+
+  justify-content: space-around;
+  display: flex;
+ align-items: start ;
+  
+}
+
+
+.first1{
+
+
+
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+
+.first2{
+
+ 
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.first3{
+
+margin-bottom: 30px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+
+}
+
+.card-name h4{
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+display: flex;  
+justify-content: space-around;
+  stroke-opacity: .5;
+margin: 20px;
+}
+
+ 
+
